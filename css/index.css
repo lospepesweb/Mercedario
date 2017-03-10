@@ -1,0 +1,183 @@
+/*COLOR doraddo rgb(169,155,6)*/
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: "RobotoSlab-Regular";
+    src: url("../font/RobotoSlab-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../font/Roboto-Regular.ttf");
+}
+html {
+	background-color: #000;
+	font-family: RobotoSlab-Regular;
+	font-size: 16px;
+	color:#fff;
+}
+nav {
+	background-color: #000;
+	width: 100%;
+	margin: 5% 0 2% 0;
+}
+	nav ul li {
+		font-size: 1.5rem;
+		text-align: center;
+		list-style: none;
+		float: left;
+		width: 25%;
+		margin: 0 auto;
+	}
+	nav ul li a:link, nav ul li a:visited {
+		text-decoration: none;
+		color:rgb(169,155,6);
+	}
+	nav ul li a:hover {
+		color: #fff;
+	}
+	.menu-fixed {
+		position:fixed;
+		z-index:1000;
+		top:0;
+		width:100%;
+		padding:1% 0;
+		margin: 0 0;
+	}
+#a {
+	color: #000;
+}
+.index {
+
+	clear: both;
+	overflow: hidden;
+	margin: 8% 0 9% 0;
+}
+	.index p {
+		text-align: center;
+		overflow: hidden;
+		clear: both;
+	}
+.flecha {
+	text-align:center;
+
+	opacity: 0.5;
+}
+#laCerveceria {
+	width: 80%;
+	margin: 10% 10% 5% 10%;
+	padding-top: 5%;
+}
+	#laCerveceria p {
+		text-align: center;
+		letter-spacing: 2px;
+		line-height: 1.8rem;
+		margin-bottom: 2%;
+	}
+section.gotBeer {
+	background-image: url("../img/gotBeer.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	width: 90%;
+	height: 500px;
+	margin: 10%;
+}
+#cervezas {
+	width:80%;
+	margin: 5% 10% 5% 10%;
+}
+#cervezas ul li {
+	list-style-type: none;
+	float: left;
+	margin-bottom: 10%;
+	margin-left: 10%;
+	width: 40%;
+	height: 300px;
+}
+#cervezas ul li.ipa {
+	background-image: url("../img/ipa.jpg");
+	background-repeat: no-repeat;
+	transition: all 0.5s ease;
+}
+#cervezas ul li.ipa:hover {
+	background-image: url("../img/ipa-texto.jpg");
+}
+#cervezas ul li.creameStout {
+	background-image: url("../img/creameStout.jpg");
+	background-repeat: no-repeat;
+	transition: all 0.5s ease;
+}
+#cervezas ul li.creameStout:hover {
+	background-image: url("../img/creameStout-texto.jpg");
+}
+#cervezas ul li.doradaPampeana {
+	background-image: url("../img/doradaPampeana.jpg");
+	background-repeat: no-repeat;
+	transition: all 0.5s ease;
+}
+#cervezas ul li.doradaPampeana:hover {
+	background-image: url("../img/doradaPampeana-texto.jpg");
+}
+#cervezas ul li.Scotish {
+	background-image: url("../img/Scotish.jpg");
+	background-repeat: no-repeat;
+	transition: all 0.5s ease;
+}
+#cervezas ul li.Scotish:hover {
+	background-image: url("../img/Scotish-texto.jpg");
+}
+#contacto {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	clear:both;
+}
+	#contacto h1, #cervezas h1{
+		font-size: 1.8rem;
+		letter-spacing: 1rem;
+		text-align: center;
+		color:rgb(169,155,6);
+		padding: 9% 0;
+	}
+	#contacto h2 {
+		font-size: 1rem;
+		letter-spacing: 0.5rem;
+		text-align: left;
+		color:rgb(169,155,6);
+		padding-top: 5%;
+	}
+footer {
+	background-color: #1F1F1F;
+	width: 100%;
+	margin-top: 5%;
+	padding: 1rem;
+}
+	footer div.columna1 {
+		width: 50%;
+		float: left;
+	}
+	footer p {
+		font-family: Roboto-Regular;
+		line-height: 1.5rem;
+		float: left;
+		overflow: hidden;
+		margin-left: 3%;
+	}
+	footer div.columna2 {
+		text-align: right;
+		width: 50%;
+		margin-left: 50%;
+	}
+	footer div.columna2 a {
+		font-size: 1.3rem;
+		text-decoration: none; 
+		color: #fff;
+		margin-right:10%;
+		transition: all 0.3s ease;
+	}
+	footer div.columna2 a:hover {
+		color:rgb(169,155,6);
+	}
