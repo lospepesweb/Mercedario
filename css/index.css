@@ -94,7 +94,8 @@ section.gotBeer {
 	float: left;
 	margin-bottom: 10%;
 	margin-left: 10%;
-	width: 40%;
+	margin-right: 10%;
+	width: 30%;
 	height: 300px;
 }
 #cervezas ul li.ipa {
@@ -144,7 +145,7 @@ section.gotBeer {
 	}
 	#contacto h2 {
 		font-size: 1rem;
-		letter-spacing: 0.5rem;
+		letter-spacing: 0.1rem;
 		text-align: left;
 		color:rgb(169,155,6);
 		padding-top: 5%;
