@@ -21,7 +21,7 @@ html {
 nav {
 	background-color: #000;
 	width: 100%;
-	margin: 5% 0 2% 0;
+	margin: 10% 0 2% 0;
 }
 	nav ul li {
 		font-size: 1.5rem;
@@ -50,7 +50,6 @@ nav {
 	color: #000;
 }
 .index {
-
 	clear: both;
 	overflow: hidden;
 	margin: 8% 0 9% 0;
@@ -62,12 +61,11 @@ nav {
 	}
 .flecha {
 	text-align:center;
-
-	opacity: 0.5;
+	opacity: 0.3;
 }
 #laCerveceria {
-	width: 80%;
-	margin: 10% 10% 5% 10%;
+	width: 60%;
+	margin: 20% 20% 5% 20%;
 	padding-top: 5%;
 }
 	#laCerveceria p {
@@ -92,43 +90,87 @@ section.gotBeer {
 #cervezas ul li {
 	list-style-type: none;
 	float: left;
+	width: 30%;
 	margin-bottom: 10%;
 	margin-left: 10%;
 	margin-right: 10%;
-	width: 30%;
-	height: 300px;
 }
-#cervezas ul li.ipa {
-	background-image: url("../img/ipa.jpg");
+
+.rotate {
+    position:relative;
+    overflow:hidden;
+    float:left;
+}
+.rotate li {
+    float: left;
+}
+.rotate figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+.rotate img {
+    width: 100%;
+}
+.rotate figure img {
+    display:block;
+    position:relative;
+    z-index:10;
+
+}
+.rotate figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.rotate figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 	background-repeat: no-repeat;
-	transition: all 0.5s ease;
+	background-position: center;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
 }
-#cervezas ul li.ipa:hover {
-	background-image: url("../img/ipa-texto.jpg");
-}
-#cervezas ul li.creameStout {
-	background-image: url("../img/creameStout.jpg");
-	background-repeat: no-repeat;
-	transition: all 0.5s ease;
-}
-#cervezas ul li.creameStout:hover {
-	background-image: url("../img/creameStout-texto.jpg");
-}
-#cervezas ul li.doradaPampeana {
-	background-image: url("../img/doradaPampeana.jpg");
-	background-repeat: no-repeat;
-	transition: all 0.5s ease;
-}
-#cervezas ul li.doradaPampeana:hover {
+.doradaPampeana figure figcaption {
 	background-image: url("../img/doradaPampeana-texto.jpg");
 }
-#cervezas ul li.Scotish {
-	background-image: url("../img/Scotish.jpg");
-	background-repeat: no-repeat;
-	transition: all 0.5s ease;
+.creameStout figure figcaption {
+	background-image: url("../img/creameStout-texto.jpg");
 }
-#cervezas ul li.Scotish:hover {
+.Scotish figure figcaption {
 	background-image: url("../img/Scotish-texto.jpg");
+}
+.ipa figure figcaption {
+	background-image: url("../img/ipa-texto.jpg")
+}
+.rotate figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+}
+.rotate figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+}
+.rotate figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0);
 }
 #contacto {
 	width: 70%;
@@ -182,3 +224,10 @@ footer {
 	footer div.columna2 a:hover {
 		color:rgb(169,155,6);
 	}
+
+
+
+
+
+
+
