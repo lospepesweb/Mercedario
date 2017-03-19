@@ -62,6 +62,12 @@ nav {
 .flecha {
 	text-align:center;
 	opacity: 0.3;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.flecha p img {
+	animation-delay: 2s;
 }
 #laCerveceria {
 	width: 60%;
@@ -223,3 +229,17 @@ footer {
 	footer div.columna2 a:hover {
 		color:rgb(169,155,6);
 	}
+@media screen and (max-width: 850px) {
+	.index {
+		margin-top: 35%;
+		margin-bottom: 30%;
+	}
+	.index p img {
+		width: 100%;
+	}
+	.flecha {
+		text-align:center;
+		opacity: 0.3;
+	}
+
+}
