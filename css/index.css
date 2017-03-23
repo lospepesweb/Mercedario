@@ -321,10 +321,10 @@ ul.socialMedia li:first-child{
 	}
 	#cervezas ul li {
 		float: none;
-		width: 70%;
+		width: 80%;
 		margin-bottom: 10%;
-		margin-left: 15%;
-		margin-right: 15%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 	.rotate img {
 	    width: 100%;
@@ -337,13 +337,19 @@ ul.socialMedia li:first-child{
 		width: 100%;
 		margin-left: 0%;
 	}
+	#contacto {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		clear:both;
+	}
 	footer {
 	height: 150px;
 	}
 	ul.socialMedia li {
 	width: 10%;
-}
-ul.socialMedia li:first-child{
-	margin-left: 40%;
-}
+	}
+	ul.socialMedia li:first-child{
+		margin-left: 40%;
+	}
 }
